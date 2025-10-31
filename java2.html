@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>casting</h1>
+    <script>
+        let userage = prompt("enter your age");
+        console.log(typeof userage);
+        userage = Number(userage);
+        console.log(typeof userage)
+
+        if (userage < 18) { alert("you are underage and not eligible") }
+
+        let weight = prompt("enter your weight in KG");
+        weight = Number(weight);
+        let height = prompt("enter your height in meter");
+        height = Number(height);
+        
+        let bmi= weight / height**2;
+        console.log(bmi);
+
+        if (bmi > 25) { alert("over weight")}else
+         { alert("under weight")};
+
+
+         let percentage = prompt("enter your percentage");
+         percentage = Number(percentage);
+
+         if (percentage > 90) {
+            alert("grade A")
+         } else if (percentage > 80) {
+            alert("grade B")
+
+         }
+          else  if (percentage > 70){
+            alert("grade c");
+          }
+           else {
+            alert("F");
+
+           }
+
+           
+         
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
