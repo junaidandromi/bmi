@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>class work</h1>
+    <script>
+        let age =20;
+        let haslicense = false;
+        if (age >18 && haslicense) {
+            console.log("you can drive a car");
+        } else {
+            console.log("you can not drive a car");
+        }
+
+        let isbirthday = false;
+        let gotgoodgrades = true;
+
+        if ( isbirthday || gotgoodgrades) {
+            console.log("you can have ice cream");
+        } else {
+            console.log("no ice cream today");
+        }
+        // not operative
+
+        let isweekend =true;
+        if (!isweekend) {
+            console.log("its a school day");
+        } else {
+            console.log("its weekend");
+
+        }
+
+
+        function sayHello() {
+            console.log("hi zeeshan");
+        }
+        sayHello();
+
+        function calculateBMI() {
+            let weight = prompt("weight in kg");
+            let height = prompt("height in meters");
+            weight = Number(weight);
+            height = Number(height);
+
+            let bmi = weight/ height **2;
+            console.log(bmi);
+        }
+        calculateBMI()
+        // function parameters
+
+        function calculatebmi(weight,height) {
+            console.log(weight,height)
+            let bmi = weight / height ** 2;
+            console.log(bmi);
+        }
+
+        // function arguments
+
+        calculatebmi(75,1.89)
+
+        function percentage(obtainedmarks,totalmarks ) {
+            console.log(obtainedmarks,totalmarks)
+            let percentage = obtainedmarks/totalmarks*100;
+            console.log(percentage);
+        
+        }
+
+        percentage(800,1000)
+
+        // function return type
+
+         function calculateBmi(weight,height) {
+            
+            let bmi = weight / height ** 2;
+            return bmi;
+        }
+
+        // function arguments
+            
+         let bmi = calculatebmi(75,1.89)
+        alert(bmi);
+
+
+        // example check age eligibility pass birth year
+
+        function checkAgeEligibility(birthyear) {
+            let age = 2025 - birthYear;
+            if (age >=18) {
+                return true;
+
+            } else {
+                return false;
+            }
+        }
+
+
+// arrays and objects
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
