@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area of Rectangle</title>
+</head>
+<body>
+  <button onclick="sayHello()">Click me and see</button>
+
+  <form onsubmit="areaCalculate(); return false;">
+    <input
+      type="number"
+      name="length"
+      id="length"
+      placeholder="Enter length (cm)"
+      required>
+
+    <input
+      type="number"
+      name="width"
+      id="width"
+      placeholder="Enter width (cm)"
+      required>
+
+    <button type="submit">Calculate Area</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function sayHello() {
+      alert("Welcome to the Area Calculator!");
+    }
+
+    function areaCalculate() {
+      const lengthRef = document.getElementById("length");
+      const widthRef = document.getElementById("width");
+
+      const length = Number(lengthRef.value);
+      const width = Number(widthRef.value);
+
+      // Formula: Area = Length × Width
+      const area = length * width;
+
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerText = `The area of the rectangle is ${area} cm²`;
+    }
+  </script>
+</body>
+</html>
+
+    
